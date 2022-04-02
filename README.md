@@ -1,4 +1,4 @@
-# Algorithm_Practice <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
+# Algorithm_Practice<br> <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
 --------
 유형별 알고리즘 문제풀이 저장소입니다.<br>
 사용언어 : 
