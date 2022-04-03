@@ -20,4 +20,5 @@
   > pop = pop() 메소드(제거만 하므로, 출력문을 따로 적어주어야한다.)   
   > top = 인덱스[-1]을 이용   
   > isempty() = python에서 if [배열]을 할 경우, 배열에 원소가 들어있으면 true를 반환하는 것을 이용.
-
+- 백준10845 큐 [문제](https://www.acmicpc.net/problem/10845)&nbsp;|&nbsp;[풀이](/DataStructure/2.py)
+  > collections 모듈의 deque 이용
