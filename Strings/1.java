@@ -21,11 +21,11 @@ public class Solution {
 		int count = 0;
 
 		for (int i = 0; i < 26; i++) {					// a-z까지 반복
-			count = 0;									// 알파벳 하나 검증 후 count 다시 초기화
+			count = 0;						// 알파벳 하나 검증 후 count 다시 초기화
 
-			for (int j = 0; j < str.length(); j++) {	// a-z가 str에 있다면 count
+			for (int j = 0; j < str.length(); j++) {		// a-z가 str에 있다면 count
 				
-				if ((int)(str.charAt(j)) == i + 97) {	// i + 97한 이유 : ascii code값
+				if ((int)(str.charAt(j)) == i + 97) {		// i + 97한 이유 : ascii code값
 					count++;
 				} // if
 			} // inner-for
