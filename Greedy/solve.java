@@ -1,11 +1,10 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.StringTokenizer;
 
 
-public class solve {
+public class Solution {
 	
 	
 	public static void main(String[] args) throws Exception {
@@ -22,20 +21,15 @@ public class solve {
 			time[i][1] = Integer.parseInt(st.nextToken());
 		} // for
 
-		Arrays.sort(time, new Comparator<int[]>() {
+		Arrays.sort(time, (o1, o2) -> {
 			
-			// 끝나는 시간을 기준으로 오름차순 정렬
-			@Override
-			public int compare(int[] o1, int[] o2) {
-				
-				// 끝나는 시간이 같다면 시작시간 기준으로 오름차순 정렬
-				if(o1[1] == o2[1]) {
-					return o1[0] - o2[0];
-				} // if
-				
-				return o1[1] - o2[1];
-			} // compare
+			// 끝나는 시간을 기준으로 오름차순 정렬을 수행하되,
+			// 끝나는 시간이 같다면 시작시간을 기준으로 오름차순 정렬 수행하도록 compare메소드 재정의
+			if(o1[1] == o2[1]) {			
+				return o1[0] - o2[0];
+			} // if
 			
+			return o1[1] - o2[1];
 		});
 		
 		int count = 0;
