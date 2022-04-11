@@ -1,10 +1,10 @@
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"/>
 
 <div align="center">
-  <h2>Algorithm_Practice</h2><br><hr>
+  <h3>Algorithm_Practice</h3><br><hr>
 유형별 알고리즘 문제풀이 저장소입니다.   
 백준, 프로그래머스, 리트코드, 해커랭크 등 알고리즘 사이트의 문제풀이를 올립니다.<br> 
-🍀목표 : 하루 1문제 이상 풀기🍀
+🍀목표 : 하루 1문제 이상 풀기🍀<hr>
 </div>
 
 ## Greedy ##
