@@ -4,7 +4,8 @@
   <h1>Algorithm_Practice</h1><hr>
   🍀목표 : 하루 1문제 이상 풀기🍀<br>
   유형별 알고리즘 문제풀이 저장소입니다.<br>   
-  백준, 프로그래머스, 리트코드, 해커랭크 등 알고리즘 사이트의 문제풀이를 올립니다.<br><hr>
+  백준, 프로그래머스, 리트코드, 해커랭크 등 알고리즘 사이트의 문제풀이를 올립니다.<br>
+  <span style="background-color : #ffdce0">빨간형광펜</span> : 아직 해결하지 못한 문제<hr>
 </div>
 
 ## Greedy ##
@@ -42,7 +43,15 @@
   > 간단해 보였지만 효율성 테스트에서 발목이 잡혀 고민했던 문제.          
   > 배열을 정렬하는 것이 포인트였다.          
   > 문자열의 정렬은 사전 순 대로 정렬되는 것을 힌트삼아 일단 배열을 정렬 후, 배열의 끝에서부터 indexOf()메소드로 비교해나갔다.           
-  > 첫글자 기준으로 정렬되기 때문에 이중 for문으로 배열을 각각 순회할 필요가 없어진다.                                                      
+  > 첫글자 기준으로 정렬되기 때문에 이중 for문으로 배열을 각각 순회할 필요가 없어진다.   
+- <span style="background-color : #ffdce0"> Programmers 베스트앨범</span> [문제](https://programmers.co.kr/learn/courses/30/lessons/42577)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution4.java)
+  > 문제에 나와있는 모든 요구조건을 충족하는데 일부 테스트 케이스가 통과가 안된다. (2022-04-12)
+  > 1. 장르 별 총 재생횟수가 높은 순서대로 출력(OK)               
+  > 2. 장르 안에서 재생횟수가 높은 순서대로 출력, 만약 같을 경우 고유번호가 낮은 순서로 출력(OK)           
+  > 3. 장르에 속한 곡이 하나라면 하나만 출력(OK)                     
+  > 레벨3 문제답게 복잡하고 시간이 많이 걸렸다.                              
+  > 다른 알고리즘 문제처럼 이해하는데 시간이 필요한 복잡한 로직이 아니라서 단계별로 구현하다보니 얼추 결과가 나왔다.                           
+  > 그러나 아직 통과하지 못한 테스트 케이스들에 대한 해결방법은 찾지 못했다.                                                                            
 ## Strings ##
 
 - HackerRank Anagrams [문제](https://www.hackerrank.com/challenges/java-anagrams/problem?isFullScreen=true)&nbsp;|&nbsp;[풀이](/Strings/1.java)
