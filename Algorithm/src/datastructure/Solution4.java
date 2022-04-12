@@ -1,11 +1,11 @@
 package datastructure;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 // Programmers 베스트 앨범(Not solved)
 
@@ -34,10 +34,8 @@ public class Solution4 {
         } // for 2
         
         // songs의 값을 내림차순으로 정렬.
-        for(int i=0; i<songs.size(); i++) {
-        	
-        	Collections.sort(songs.get(genres[i]), Collections.reverseOrder());
-        } // for
+        Set<String> songNameSet = songs.keySet();
+        songNameSet.forEach(t -> Collections.sort(songs.get(t), Collections.reverseOrder()));
         
         // 장르 별 총 재생횟수를 비교하기 위해, 장르 별로 플레이 횟수를 모두 더한 값을
         // 맵 객체로 저장한다.
@@ -100,14 +98,6 @@ public class Solution4 {
         	j += 2;
         } // for
         
-		/* 확인용
-		 * 
-		 * System.out.println(playsIdx); 
-		 * System.out.println(songs);
-		 * System.out.println(entryList); 
-		 * System.out.println(Arrays.toString(answer));
-		 */
-        
         return answer;
     } // solution
     
@@ -121,17 +111,5 @@ public class Solution4 {
     	
     	return count;
     } // playCounter
-    
-	/* 테스트용 main 메소드
-	 * 
-	 * public static void main(String[] args) {
-	 * 
-	 * String[] genres = {"classic", "pop", "classic", "classic", "pop", "zazz",
-	 * "zazz"}; int[] plays = {800, 800, 800, 800, 2500, 2000, 6000};
-	 * 
-	 * Solution4 sol = new Solution4();
-	 * 
-	 * sol.solution(genres, plays); } // main
-	 */
     
 } // end class
