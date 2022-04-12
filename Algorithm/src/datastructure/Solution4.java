@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+// Programmers 베스트 앨범(Not solved)
 
 public class Solution4 {
 	
@@ -121,14 +122,16 @@ public class Solution4 {
     	return count;
     } // playCounter
     
-    public static void main(String[] args) {
-    	
-    	String[] genres = {"classic", "pop", "classic", "classic", "pop", "zazz", "zazz"};
-    	int[] plays = {800, 800, 800, 800, 2500, 2000, 6000};
-    	
-    	Solution4 sol = new Solution4();
-    	
-    	sol.solution(genres, plays);
-    } // main
-
+	/* 테스트용 main 메소드
+	 * 
+	 * public static void main(String[] args) {
+	 * 
+	 * String[] genres = {"classic", "pop", "classic", "classic", "pop", "zazz",
+	 * "zazz"}; int[] plays = {800, 800, 800, 800, 2500, 2000, 6000};
+	 * 
+	 * Solution4 sol = new Solution4();
+	 * 
+	 * sol.solution(genres, plays); } // main
+	 */
+    
 } // end class
