@@ -45,14 +45,11 @@ public class Solution5 {
 		} // for
 		
 		if(temp > maxCount) {
-			maxCount = temp;
 			
+			maxCount = temp;
 			num = cards[cards.length-1];
 		} // if
 		
-		System.out.println(temp);
-		System.out.println(maxCount);
-		System.out.println(Arrays.toString(cards));
 		System.out.println(num);
 	} // main
     
