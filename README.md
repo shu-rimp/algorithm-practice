@@ -51,12 +51,21 @@
 - 백준11652 카드 [문제](https://www.acmicpc.net/problem/11652)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution5.java)
   > 주어진 정수의 범위가 int를 초과하므로, long으로 선언해야 한다.                     
   > 마지막 정수가 가장 많이 나올경우를 생각해 반복문 이후에 비교하는 코드를 한번 더 넣어주어야 함.                            
-  > 변수의 초기화 조건과 반례를 찾아내는 것이 조금 까다로웠던 문제.                                                                                        
+  > 변수의 초기화 조건과 반례를 찾아내는 것이 조금 까다로웠던 문제.    
+                                                                                    
 ## Strings ##
 
 - HackerRank Anagrams [문제](https://www.hackerrank.com/challenges/java-anagrams/problem?isFullScreen=true)&nbsp;|&nbsp;[풀이](/Strings/1.java)
   > 컬렉션 Arrays를 import 하지 못하게 되어있다.      
   > ascii 코드값을 이용해 a-z 크기의 배열을 만들고 해당하는 알파벳 수를 카운팅하여 저장, 두 배열의 요소를 비교하도록 만들었다.
+
+## Implementation ##
+
+- 백준 17478 재귀함수가 뭔가요? [문제](https://www.acmicpc.net/problem/17478)&nbsp;|&nbsp;[풀이](Algorithm/src/implementation/Solution.java)
+  > 재귀함수(자기자신을 호출하는 함수)를 이용하는 문제.               
+  > 재귀함수를 처음 이용해본 문제. Dashline의 길이 때문에 함수를 두개로 나눠서 풀었지만, 대시가 없을 경우엔 write 중간에 함수를 호출하는 방법으로 작성하면         
+  > 간단하게 작성가능하다.            
+  > void타입 함수에서 리턴 값 없이 return만 작성하면 함수를 호출했던 곳으로 돌아간다.
 
 ## ETC ##
 
