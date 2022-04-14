@@ -58,6 +58,9 @@
 - HackerRank Anagrams [문제](https://www.hackerrank.com/challenges/java-anagrams/problem?isFullScreen=true)&nbsp;|&nbsp;[풀이](/Strings/1.java)
   > 컬렉션 Arrays를 import 하지 못하게 되어있다.      
   > ascii 코드값을 이용해 a-z 크기의 배열을 만들고 해당하는 알파벳 수를 카운팅하여 저장, 두 배열의 요소를 비교하도록 만들었다.
+- 백준 20291 파일 정리 [문제](https://www.acmicpc.net/problem/20291)&nbsp;|&nbsp;[풀이](Algorithm/src/strings/Solution.java)
+  > String Tokenizer를 이용해 .을 기준으로 분리 후,                   
+  > 사전순으로 출력하기 위해 배열을 정렬하고 카운트 해주었다.
 
 ## Implementation ##
 
