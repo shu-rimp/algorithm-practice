@@ -64,6 +64,21 @@
 - 백준 20291 파일 정리 [문제](https://www.acmicpc.net/problem/20291)&nbsp;|&nbsp;[풀이](Algorithm/src/strings/Solution.java)
   > String Tokenizer를 이용해 .을 기준으로 분리 후,                   
   > 사전순으로 출력하기 위해 배열을 정렬하고 카운트 해주었다.
+- 백준 1543 문서 검색 [문제](https://www.acmicpc.net/problem/1543)&nbsp;|&nbsp;[풀이](Algorithm/src/strings/Solution2.java)
+  > 문자열에서 주어진 단어를 포함하는 갯수를 찾는 문제.                      
+  > 빈 문자열을 하나 생성하고 charAt()메소드를 사용해 문자를 하나하나 담다가, 해당 단어를 포함하면 카운트하고 문자열을 초기화 해주었다.
+- 백준 15904 UCPC는 무엇의 약자일까? [문제](https://www.acmicpc.net/problem/15904)&nbsp;|&nbsp;[풀이](Algorithm/src/strings/Solution3.java)
+  > 문자열을 쪼개서 리스트에 담고, 리스트를 순회하면서 차례대로 U, C, P, C를 찾아냈다.                                  
+  > isValid라는 int타입 변수를 선언하고 값을 변경하면서, 문자가 일치하고 동시에 isValid 값이 일치하는 문자가 있는지 찾았다.                     
+  > 이는 UCPC라는 문자 순서가 바뀌면 안되기 때문에 추가로 조건을 만든 것이다.                                      
+- 백준 5525 IOIOI [문제](https://www.acmicpc.net/problem/5525)&nbsp;|&nbsp;[풀이](Algorithm/src/strings/Solution4.java)
+  > 문자열 Pn은 재귀함수를 이용해 만들었다.                      
+  > 이 문제는 로직에는 문제가 없으나, 시간복잡도 때문에 50점으로 나온다.                          
+  > 문자열을 비교하기 위해 배열에서 한칸한칸 옮겨가며 비교하는 방식으로 할 경우 정답처리되지 않는다고 한다.                          
+  > 정답처리되기 위해선 KMP알고리즘을 이용해야 한다고 한다.                                   
+  > KMP알고리즘이란 접두사(prefix)와 접미사(suffix)가 같은 부분 문자열 중 최대 길이를 찾고, 다음 문자열을 비교할 때 그 접미사의 다음순서부터                           
+  > 비교하면 되어 훨씬 빠르게 문자열을 찾을 수 있는 알고리즘이라고 한다.                              
+  > 나중에 KMP알고리즘을 이용해 다시 풀어봐야겠다.                                  
 
 ## Implementation ##
 
