@@ -55,6 +55,11 @@
   > 주어진 정수의 범위가 int를 초과하므로, long으로 선언해야 한다.                     
   > 마지막 정수가 가장 많이 나올경우를 생각해 반복문 이후에 비교하는 코드를 한번 더 넣어주어야 함.                            
   > 변수의 초기화 조건과 반례를 찾아내는 것이 조금 까다로웠던 문제.    
+- Programmers 크레인 인형뽑기 게임 [문제](https://programmers.co.kr/learn/courses/30/lessons/64061)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution6.java)
+  > 스택의 특징을 적극이용하는 문제.                    
+  > 0이 아닐경우 해당 값과 스택에 들어있는 값을 비교해 같으면 pop, 다르면 push해주었다.                 
+  > 비어있는 스택에서 peek할 경우 EmptyStackException이 발생하기 때문에 예외처리를 해주어야 한다.                    
+  > 이 문제에선 스택에 0이 들어올 일이 없으므로, 초기값으로 0을 넣어주는 것으로 예외를 처리했다.                   
                                                                                     
 ## Strings ##
 
