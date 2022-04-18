@@ -85,6 +85,9 @@
   > 다음 문자열을 비교할 때 그 접미사의 다음순서부터 비교하면 되어                                      
   > 훨씬 빠르게 문자열을 찾을 수 있는 알고리즘이라고 한다.                              
   > 나중에 KMP알고리즘을 이용해 다시 풀어봐야겠다.                                  
+- Programmers 숫자 문자열과 영단어 [문제](https://programmers.co.kr/learn/courses/30/lessons/81301)&nbsp;|&nbsp;[풀이](Algorithm/src/strings/Solution5.java)&nbsp;|&nbsp;[다른사람의 풀이](Algorithm/src/strings/Solution5_1.java)
+  > 문자열을 charAt()으로 하나씩 담고 switch expression을 이용, 영단어가 완성되거나 숫자가 들어오면 해당하는 숫자로 반환해주었다.                         
+  > 두 번째 풀이는 다른사람의 풀이인데, replaceAll()을 사용한 것이 인상깊었다.                
 
 ## Implementation ##
 
