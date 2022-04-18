@@ -1,4 +1,4 @@
-package datastructure;
+package strings;
 
 // Programmers 숫자 문자열과 영단어(다른사람의 풀이)
 
