@@ -62,7 +62,12 @@
   > 이 문제에선 스택에 0이 들어올 일이 없으므로, 초기값으로 0을 넣어주는 것으로 예외를 처리했다. 
 - Programmers 오픈채팅방 [문제](https://programmers.co.kr/learn/courses/30/lessons/42888)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution7.java)
   > 해시맵의 특징(같은 키를 가지는 값이 들어오면 나중에 들어오는 값으로 대체됨)을 이용하면 change는 따로 신경쓰지 않아도 된다.                                    
-  > 해시맵에 record 순서대로 key = id, value = 닉네임으로 받고, leave와 enter에 맞게 메시지를 출력했다.                              
+  > 해시맵에 record 순서대로 key = id, value = 닉네임으로 받고, leave와 enter에 맞게 메시지를 출력했다.               
+- Programmers 가장 큰 수 [문제](https://programmers.co.kr/learn/courses/30/lessons/42746)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution8.java)    
+  > '전화번호 목록' 문제와 마찬가지로, 정수를 사전 역순으로 정렬하는 것이 포인트인 문제.                      
+  > 단, 조건이 한 가지 더 있는데, 입출력 예시 중 3, 30과 같은 숫자가 들어오면 330이 아닌 303으로 정렬되어서 Comparator를 사용해 따로 정렬해주어야한다.              
+  > Comparator 사용시 요소 하나를 비교하는 것이 아닌 두 개를 더한 값을 비교하면 해결할 수 있다.                  
+  > (문자열에서의 + 연산자는 문자연결 연산자임을 이용)          
                                                                                     
 ## Strings ##
 
@@ -99,6 +104,7 @@
   > 재귀함수를 처음 이용해본 문제. Dashline의 길이 때문에 함수를 두개로 나눠서 풀었지만,                         
   > 대시가 없을 경우엔 write 중간에 함수를 호출하는 방법으로 작성하면 간단하게 작성가능하다.                                    
   > void타입 함수에서 리턴 값 없이 return만 작성하면 함수를 호출했던 곳으로 돌아간다.
+- Programmers 음양 더하기 [문제](https://programmers.co.kr/learn/courses/30/lessons/76501)&nbsp;|&nbsp;[풀이](Algorithm/src/implementation/Solution2.java)
 
 ## ETC ##
 
