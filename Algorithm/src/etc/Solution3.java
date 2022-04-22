@@ -60,6 +60,7 @@ public class Solution3 {
 					case 1 -> dfs(number - num[idx], idx + 1);
 					case 2 -> dfs(number * num[idx], idx + 1);
 					case 3 -> dfs(number / num[idx], idx + 1);
+					
 				} // switch expression
 				
 				operator[i]++;
