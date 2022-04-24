@@ -120,10 +120,10 @@
 - Codeforces Round #784 (Div. 4) (3solved, result : 2 out of 8)
   > A [문제](https://codeforces.com/contest/1669/problem/A)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution4.java)               
   > B [문제](https://codeforces.com/contest/1669/problem/B)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution5.java) 
-    > 배열을 정렬 후 다른 정수 값이 나올 때마다 카운트 변수를 초기화해주면서, 3 이상이 되면 해당 수를 바로 프린트 해주고 빠져나오게 했다.                  
-    > 3개 이상의 값이 아예 없을 경우 -1을 프린트해주기 위해 boolean변수를 만들어 반복문 이후에도 boolean이 true면 -1을 프린트해준다.                    
-    > contest 당시에는 통과되었으나 끝난 후 테스트케이스가 더 추가되면서 타임아웃으로 인해 오답처리 되었다.                          
+    >> 배열을 정렬 후 다른 정수 값이 나올 때마다 카운트 변수를 초기화해주면서, 3 이상이 되면 해당 수를 바로 프린트 해주고 빠져나오게 했다.                  
+    >> 3개 이상의 값이 아예 없을 경우 -1을 프린트해주기 위해 boolean변수를 만들어 반복문 이후에도 boolean이 true면 -1을 프린트해준다.                    
+    >> contest 당시에는 통과되었으나 끝난 후 테스트케이스가 더 추가되면서 타임아웃으로 인해 오답처리 되었다.                          
   > C [문제](https://codeforces.com/contest/1669/problem/C)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution6.java)
-    > 배열의 짝수번째요소, 홀수번째요소들이 각각 모두 홀수거나 짝수일 경우 YES가 된다.                  
-    > boolean변수를 4개 만들어 짝수번째 요소의 홀/짝, 홀수번쨰 요소의 홀/짝을 비교해 YES가 되는 모든 경우의 수를 조건식으로 나열하는 코드를 작성했다.             
-    > 개인적으로 정말 무식하게 풀었다고 생각한다... 더 좋은 풀이법이 생각나면 추가해야겠다.
+    >> 배열의 짝수번째요소, 홀수번째요소들이 각각 모두 홀수거나 짝수일 경우 YES가 된다.                  
+    >> boolean변수를 4개 만들어 짝수번째 요소의 홀/짝, 홀수번쨰 요소의 홀/짝을 비교해 YES가 되는 모든 경우의 수를 조건식으로 나열하는 코드를 작성했다.             
+    >> 개인적으로 정말 무식하게 풀었다고 생각한다... 더 좋은 풀이법이 생각나면 추가해야겠다.
