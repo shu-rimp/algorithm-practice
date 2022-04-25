@@ -106,6 +106,14 @@
   > void타입 함수에서 리턴 값 없이 return만 작성하면 함수를 호출했던 곳으로 돌아간다.
 - Programmers 음양 더하기 [문제](https://programmers.co.kr/learn/courses/30/lessons/76501)&nbsp;|&nbsp;[풀이](Algorithm/src/implementation/Solution2.java)
 
+## DFS / BFS ##
+
+-Programmers 타겟 넘버 [문제](https://programmers.co.kr/learn/courses/30/lessons/43165)&nbsp;|&nbsp;[풀이](Algorithm/src/dfs_bfs/Solution.java)
+  > 인터넷을 참고한 풀이.             
+  > 재귀함수를 이용해 모든 경우의 수를 탐색한다.                  
+  > numbers의 인덱스를 1씩 증가시키면서 인덱스에 해당하는 값을 sum에 누적시키고, 그 값이 target과 일치하면 answer값을 1씩 증가시킨다.                 
+  > 합을 계산하는 dfs와 뺄셈을 계산하는 dfs를 각각 호출한다.
+
 ## ETC ##
 
 - Programmers x만큼 간격이 있는 n개의 숫자 [문제](https://programmers.co.kr/learn/courses/30/lessons/12954)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution.java)
