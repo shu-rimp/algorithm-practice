@@ -108,6 +108,9 @@
 - Programmers K번째수 [문제](https://programmers.co.kr/learn/courses/30/lessons/42748)&nbsp;|&nbsp;[풀이](Algorithm/src/implementation/Solution3.java)
   > 문제에서 요구하는 그대로 구현하면 된다.                   
   > Arrays.copyOfRange 메소드를 사용하면 간단하게 배열을 슬라이싱할 수 있다.                
+- Programmers 없는 숫자 더하기 [문제](https://programmers.co.kr/learn/courses/30/lessons/86051)&nbsp;|&nbsp;[풀이](Algorithm/src/implementation/Solution4.java)
+  > indexOf()메소드를 이용하기 위해 주어진 배열을 list에 담고 비교했다.                   
+  > 0~9까지의 배열을 만들고, indexOf를 이용해 비교해나가며 그 값이 -1이면 answer에 더해주었다.                   
 
 ## DFS / BFS ##
 
