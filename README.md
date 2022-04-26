@@ -77,6 +77,14 @@
   > 굳이 set에 담지 않고 Integer로 숫자만 표시하는 방법을 택한 사람들이 많았다.                  
   > plus) forEach()메소드에서 지역변수를 사용할 때, 람다식 내부는 익명구현객체이므로 지역변수와 파라미터로 사용하는 변수를 구분하지 못해                     
   > 지역변수를 상수적으로 사용하라는 컴파일 오류가 발생한다. 해결방법은 지역변수를 클래스의 필드로 선언하면 된다.               
+- 백준 10773 제로 [문제](https://www.acmicpc.net/problem/10773)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution10.java)
+  > 스택에 수를 차례로 담고 0이 나올 경우 pop, 스택에 남아있는 수들을 모두 더해 결과값으로 출력한다.
+- 백준 9012 괄호 [문제](https://www.acmicpc.net/problem/9012)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution11.java)
+  > 스택을 생성하고 조건을 부여했다.                  
+  > (1) 스택이 비어있으면 push                        
+  > (2) 스택에서 peek한 값이 '('이고, 비교할 값이 ')'이면 pop               
+  > (3) (2)의 조건을 충족하지 못하면 push                 
+  > 반복문 이후에 스택이 비어있으면 올바른 괄호 문자열이다.        
                                                                                     
 ## Strings ##
 
