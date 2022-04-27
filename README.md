@@ -90,6 +90,11 @@
   > (2) 스택에서 peek한 값이 '('이고, 비교할 값이 ')'이면 pop               
   > (3) (2)의 조건을 충족하지 못하면 push                 
   > 반복문 이후에 스택이 비어있으면 올바른 괄호 문자열이다.        
+- Programmers 주식가격 [문제](https://programmers.co.kr/learn/courses/30/lessons/42584)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution12.java)
+  > 이중for문을 사용했고, inner for문의 시작인덱스는 outer for문의 i+1(i의 다음 인덱스)부터 비교하도록 지정했다.              
+  > second를 1씩 증가시키다가 비교대상이 더 작을 경우에 break하고 answer 배열에 담는다.                   
+  > 이후 second 초기화, 반복               
+  > 스택/큐 문제집에 있는 문제인데, 굳이 사용할 필요를 못느껴 기본타입 배열을 사용했다.
                                                                                     
 ## Strings ##
 
