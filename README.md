@@ -122,7 +122,11 @@
   > 나중에 KMP알고리즘을 이용해 다시 풀어봐야겠다.                                  
 - Programmers 숫자 문자열과 영단어 [문제](https://programmers.co.kr/learn/courses/30/lessons/81301)&nbsp;|&nbsp;[풀이](Algorithm/src/strings/Solution5.java)&nbsp;|&nbsp;[다른사람의 풀이](Algorithm/src/strings/Solution5_1.java)
   > 문자열을 charAt()으로 하나씩 담고 switch expression을 이용, 영단어가 완성되거나 숫자가 들어오면 해당하는 숫자로 반환해주었다.                         
-  > 두 번째 풀이는 다른사람의 풀이인데, replaceAll()을 사용한 것이 인상깊었다.                
+  > 두 번째 풀이는 다른사람의 풀이인데, replaceAll()을 사용한 것이 인상깊었다.    
+- Programmers 신규 아이디 추천 [문제](https://programmers.co.kr/learn/courses/30/lessons/72410)&nbsp;|&nbsp;[풀이](Algorithm/src/strings/Solution6.java)
+  > 단순히 문제에서 요구하는 대로 차근차근 구현하기만 하면 되는 문제.             
+  > 스택을 사용하면 편할것 같아 스택으로 풀었다.              
+  > 1단계에서 특수문자를 변환할 때 정규식을 이용한 풀이가 많았다. 아직 정규식을 몰라서 배열에 허용되지 않는 특수문자들을 담고 replaceAll을 사용했다.                
 
 ## Implementation ##
 
