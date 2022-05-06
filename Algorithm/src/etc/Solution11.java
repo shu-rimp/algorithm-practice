@@ -1,7 +1,6 @@
 package etc;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -22,33 +21,31 @@ class Solution11 {
         int count2 = countAnswer(answers, student2);
         int count3 = countAnswer(answers, student3);
         
+        List<Integer> answerCount = new ArrayList<>();
+        answerCount.add(count1);
+        answerCount.add(count2);
+        answerCount.add(count3);
         
-        List<Integer> maxCount = new ArrayList<>();
-        maxCount.add(count1);
-        maxCount.add(count2);
-        maxCount.add(count3);
-        
-        int max = Collections.max(maxCount);
+        int max = Collections.max(answerCount);
         int count = 0;
         
         for(int i=0; i<3; i++) {
-        	if(maxCount.get(i) == max) {
+        	if(answerCount.get(i) == max) {
         		count++;
-        	}
-        }
+        	} // if
+        } // for
         
         int[] answer = new int[count];
         
-        for(int i=0; i<count; i++) {
-        	answer[i] = i+1;
+        for(int i=0; i<3; i++) {
+        	int idx = 0;
+        	
+        	if(answerCount.get(i) == max) {
+        		answer[idx] = i + 1;
+        	} // if
+        	
+        	idx++;
         } // for
-        
-        Arrays.sort(answer);
-        
-        System.out.println(Arrays.toString(student1));
-        System.out.println(Arrays.toString(student2));
-        System.out.println(Arrays.toString(student3));
-        System.out.println(Arrays.toString(answer));
         
         return answer;
     } // solution
@@ -82,15 +79,5 @@ class Solution11 {
     	
     	return count;
     } // countAnswer
-    
-    
-    public static void main(String[] args) {
-    	int[] answers = {1,2,3,4,5};
-    	
-    	Solution11 sol = new Solution11();
-    	
-    	sol.solution(answers);
-    	
-    }
     
 } // end class
