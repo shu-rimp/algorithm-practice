@@ -177,7 +177,10 @@
   > 문제유형 : 분할탐색                     
   > 색종이 만들기, 쿼드트리와 동일하게 풀면 된다.                
   > 단, 이 문제에서는 9등분하기 때문에 재귀를 호출할 때 9개의 영역으로 나누어 호출해야한다.       
-- Programmers 모의고사 [문제](https://programmers.co.kr/learn/courses/30/lessons/42840)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution11.java)           
+- Programmers 모의고사 [문제](https://programmers.co.kr/learn/courses/30/lessons/42840)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution11.java)                   
+  > 난이도 있는 문제는 아니지만 요구사항 대로 작성하다보니 전혀 예상치 못하게 코드량이 많아졌다..                              
+  > 배열의 사이즈를 정하기 위한 반복문, 답을 구한 후에 answer에 담기 위해 한번 더 반복문을 돌리는 등                                             
+  > 불필요한 코드들을 많이 작성한 것 같아 아쉬운 문제.              
 
 ## Codeforces ##
 
