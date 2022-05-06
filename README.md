@@ -176,7 +176,8 @@
 - 백준 1780 종이의 개수 [문제](https://www.acmicpc.net/problem/1780)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution9.java)   
   > 문제유형 : 분할탐색                     
   > 색종이 만들기, 쿼드트리와 동일하게 풀면 된다.                
-  > 단, 이 문제에서는 9등분하기 때문에 재귀를 호출할 때 9개의 영역으로 나누어 호출해야한다.                 
+  > 단, 이 문제에서는 9등분하기 때문에 재귀를 호출할 때 9개의 영역으로 나누어 호출해야한다.       
+- Programmers 모의고사 [문제](https://programmers.co.kr/learn/courses/30/lessons/42840)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution11.java)           
 
 ## Codeforces ##
 
