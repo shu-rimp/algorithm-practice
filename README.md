@@ -126,7 +126,11 @@
 - Programmers 신규 아이디 추천 [문제](https://programmers.co.kr/learn/courses/30/lessons/72410)&nbsp;|&nbsp;[풀이](Algorithm/src/strings/Solution6.java)
   > 단순히 문제에서 요구하는 대로 차근차근 구현하기만 하면 되는 문제.             
   > 스택을 사용하면 편할것 같아 스택으로 풀었다.              
-  > 1단계에서 특수문자를 변환할 때 정규식을 이용한 풀이가 많았다. 아직 정규식을 몰라서 배열에 허용되지 않는 특수문자들을 담고 replaceAll을 사용했다.                
+  > 1단계에서 특수문자를 변환할 때 정규식을 이용한 풀이가 많았다. 아직 정규식을 몰라서 배열에 허용되지 않는 특수문자들을 담고 replaceAll을 사용했다. 
+- Programmers [1차]뉴스 클러스터링 [문제](https://programmers.co.kr/learn/courses/30/lessons/17677)&nbsp;|&nbsp;[풀이](Algorithm/src/strings/Solution7.java) 
+  > 문자열을 다중집합으로 만들고, 영어가 아닌 문자가 포함된 원소들을 제거해준 뒤 유사도를 계산하면 된다. ascii코드값을 이용했다.                
+  > 교집합, 합집합은 원소의 갯수만 구하면 되어 따로 집합을 만들 필요가 없다.                    
+  > 대소문자만 다르고 같은 문자열이 들어올 경우 유사도가 1이므로 계산할 필요 없이 그대로 리턴해주면 된다.(문제에서는 65536)                  
 
 ## Implementation ##
 
