@@ -145,7 +145,19 @@
   > Arrays.copyOfRange 메소드를 사용하면 간단하게 배열을 슬라이싱할 수 있다.                
 - Programmers 없는 숫자 더하기 [문제](https://programmers.co.kr/learn/courses/30/lessons/86051)&nbsp;|&nbsp;[풀이](Algorithm/src/implementation/Solution4.java)
   > indexOf()메소드를 이용하기 위해 주어진 배열을 list에 담고 비교했다.                   
-  > 0~9까지의 배열을 만들고, indexOf를 이용해 비교해나가며 그 값이 -1이면 answer에 더해주었다.                   
+  > 0~9까지의 배열을 만들고, indexOf를 이용해 비교해나가며 그 값이 -1이면 answer에 더해주었다.             
+- Programmers 스킬체크 level2-1 [풀이](Algorithm/src/implementation/Solution5.java)
+  > 이전에 풀었던 [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) 문제와 동일한 문제가 나왔다.
+  > 정수를 문자열 취급해 사전 내림차순으로 정렬하되, 3, 30과 같은 숫자처럼 예외가 있기 때문에 두 문자열씩 묶어 비교해야 한다.
+- Programmers 스킬체크 level2-2 [풀이](Algorithm/src/implementation/Solution6.java)
+  > 2차원 배열을 이용해 행렬을 회전하는 문제.                       
+  > 1차원 배열에서 값을 바꾸는 원리와 동일하다. 바꾸기 위해 원래 값을 임시변수에 저장하고,                         
+  > 배열의 이동을 마치면 빈 자리에 저장해두었던 값을 넣어주면 된다.                     
+  > 테두리만 회전시키면 되므로 주어진 쿼리의 시작 행/열, 끝 행/열 기준으로 값을 대입해나가면된다.                   
+  > 시작 값을 임시변수에 저장하고, 빈 자리부터 시계방향으로 한칸씩 당겨왔다.                     
+  > 쿼리 하나당 총 4번의 이동이 일어나고, 그때마다 최소값을 비교해 min에 저장한다.                       
+  > 회전을 모두 마치면 min값을 리턴하고, 그 값을 answer배열에 담아 리턴하면 된다.                         
+  > 해당 사이트의 [행렬 테두리 회전하기](https://programmers.co.kr/learn/courses/30/lessons/42746) 문제와 동일하다.
 
 ## DFS / BFS ##
 
