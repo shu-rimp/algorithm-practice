@@ -157,7 +157,7 @@
   > 시작 값을 임시변수에 저장하고, 빈 자리부터 시계방향으로 한칸씩 당겨왔다.                     
   > 쿼리 하나당 총 4번의 이동이 일어나고, 그때마다 최소값을 비교해 min에 저장한다.                       
   > 회전을 모두 마치면 min값을 리턴하고, 그 값을 answer배열에 담아 리턴하면 된다.                         
-  > 해당 사이트의 [행렬 테두리 회전하기](https://programmers.co.kr/learn/courses/30/lessons/42746) 문제와 동일하다.
+  > 해당 사이트의 [행렬 테두리 회전하기](https://programmers.co.kr/learn/courses/30/lessons/77485) 문제와 동일하다.
 
 ## DFS / BFS ##
 
