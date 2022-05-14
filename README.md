@@ -98,14 +98,14 @@
 - Programmers 프린터 [문제](https://programmers.co.kr/learn/courses/30/lessons/42587)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution13.java)
   > 우선순위 큐를 이용하는 문제.                
   > 우선순위 큐는 큐에 정렬이 추가된 자료구조이다. 이 문제에선 내림차순 정렬을 사용한 우선순위 큐를 사용했다.                 
-  > (1) 큐에서 peek한 값과 priorities 배열의 원소를 비교한다.                
-  > (2) 그 값이 같다면 poll하고 answer카운트를 1 증가한다.                       
-  > (3) 값이 같으면서 인덱스(for문의 i)와 location이 일치하면 answer를 리턴한다.                 
+  > (1) 큐에서 peek한 값과 priorities 배열의 원소를 비교한다.                               
+  > (2) 그 값이 같다면 poll하고 answer카운트를 1 증가한다.                                    
+  > (3) 값이 같으면서 인덱스(for문의 i)와 location이 일치하면 answer를 리턴한다.                     
 - Programmers 기능개발 [문제](https://programmers.co.kr/learn/courses/30/lessons/42586)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution14.java)
   > 큐를 이용하는 문제.
-  > (1) 각 작업이 끝나는 날짜를 미리 계산해서 큐에 저장한다.              
-  > (2) 첫번째 값을 꺼내 임시변수 tmp에 저장하고, peek한 값이 tmp보다 클 때까지 카운트를 증가시키고, 값을 poll한다.            
-  > (3) 큐가 빌 때까지 1, 2를 반복한다.
+  > (1) 각 작업이 끝나는 날짜를 미리 계산해서 큐에 저장한다.                                    
+  > (2) 첫번째 값을 꺼내 임시변수 tmp에 저장하고, peek한 값이 tmp보다 클 때까지 카운트를 증가시키고, 값을 poll한다.                              
+  > (3) 큐가 빌 때까지 1, 2를 반복한다.                
                                                                                     
 ## Strings ##
 
