@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"/>
+<img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"/>
 
 <div align="center">
   <h1>Algorithm_Practice</h1><hr>
@@ -178,6 +178,15 @@
   > numbers의 인덱스를 1씩 증가시키면서 인덱스에 해당하는 값을 sum에 누적시키고,                      
   > 그 값이 target과 일치하면 answer값을 1씩 증가시킨다.                            
   > 합을 계산하는 dfs와 뺄셈을 계산하는 dfs를 각각 호출한다.
+- BFS 알고리즘에 대한 이해
+  > [인접행렬로 구현한 BFS](Algorithm/src/dfs_bfs/Bfs.java)&nbsp;|&nbsp;[인접리스트로 구현한 BFS](Algorithm/src/dfs_bfs/BfsAdjList.java)                          
+  > BFS는 큐로 구현하고, DFS와 달리 재귀적으로 동작하지 않는다.                             
+  > 2차원 배열(인접행렬)과 인접리스트로 구현하는 2가지의 방법이 있다.                              
+  > 그래프 내에 적은 수의 간선을 가진다면 인접리스트를 사용하는 것이 유리하다.(인접 행렬의 경우 메모리 낭비가 크기 때문)                             
+  > 방문여부를 알 수 있는 boolean타입 배열을 같이 선언해야 한다.                           
+  > 시작 노드를 큐에 저장한 후, 큐에서 꺼내(poll) 해당 노드에 연결되어있는 노드들의 방문여부를 체크한다.                             
+  > 만약 방문이 안된 노드라면, 방문처리 후 큐에 집어넣는다.                                 
+  > 이 과정을 큐가 빌 때까지 반복하면 bfs탐색이 완료된다.                          
 
 ## ETC ##
 
