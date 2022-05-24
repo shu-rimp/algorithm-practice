@@ -58,8 +58,6 @@ public class Solution7 {
 		br.close();
 		
 		System.out.println(bfs());
-		System.out.println(Arrays.deepToString(tomatoes));
-		
 	} // main
 	
 	static int bfs() {
