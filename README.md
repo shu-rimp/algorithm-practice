@@ -4,13 +4,17 @@
   <h1>Algorithm_Practice</h1><hr>
   🍀목표 : 하루 1문제 이상 풀기🍀<br>
   유형별 알고리즘 문제풀이 저장소입니다.<br>   
-  백준, 프로그래머스, 리트코드, 해커랭크 등 알고리즘 사이트의 문제풀이를 올립니다.<br>
+  백준, 프로그래머스, 리트코드, 해커랭크 등 알고리즘 사이트의 문제풀이를 올립니다.<br><br>
   🏆난이도🏆<br>
   백준 : Silver ~ Gold<br>
   프로그래머스 : level1 ~ level3<br><hr>
 </div>
 
+[Greedy](#greedy) | [Data Structure](#datastructure) | [Strings](#strings) | [Implementation](#implementation) | [DFS BFS](#dfs-bfs) | [Etc](#etc) | [Codeforces](#codeforces)<hr>
+
+
 ## Greedy ##
+[top](#algorithm_practice)
 
 - 백준11047 동전 0 [문제](https://www.acmicpc.net/problem/11047)&nbsp;|&nbsp;[풀이](/Greedy/1.py)
 - 백준11399 ATM [문제](https://www.acmicpc.net/problem/11399)&nbsp;|&nbsp;[풀이](/Greedy/2.py)
@@ -29,6 +33,7 @@
   > A를 오름차순 정렬 후 A를 순회하면서, B에서 최대값(Collections.max() 이용)을 찾아 곱하고 B의 요소를 제거하는 방식으로 접근했다.
 
 ## DataStructure ##
+[top](#algorithm_practice)
 
 - 백준10828 스택 [문제](https://www.acmicpc.net/problem/10828)&nbsp;|&nbsp;[풀이](/DataStructure/1.py)
   > python에서는 stack을 따로 제공하지 않고, list로 구현한다.    
@@ -102,12 +107,13 @@
   > (2) 그 값이 같다면 poll하고 answer카운트를 1 증가한다.                                    
   > (3) 값이 같으면서 인덱스(for문의 i)와 location이 일치하면 answer를 리턴한다.                     
 - Programmers 기능개발 [문제](https://programmers.co.kr/learn/courses/30/lessons/42586)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution14.java)
-  > 큐를 이용하는 문제.
+  > 큐를 이용하는 문제.               
   > (1) 각 작업이 끝나는 날짜를 미리 계산해서 큐에 저장한다.                                    
   > (2) 첫번째 값을 꺼내 임시변수 tmp에 저장하고, peek한 값이 tmp보다 클 때까지 카운트를 증가시키고, 값을 poll한다.                              
   > (3) 큐가 빌 때까지 1, 2를 반복한다.                
                                                                                     
 ## Strings ##
+[top](#algorithm_practice)
 
 - HackerRank Anagrams [문제](https://www.hackerrank.com/challenges/java-anagrams/problem?isFullScreen=true)&nbsp;|&nbsp;[풀이](/Strings/1.java)
   > 컬렉션 Arrays를 import 하지 못하게 되어있다.      
@@ -144,6 +150,7 @@
   > 대소문자만 다르고 같은 문자열이 들어올 경우 유사도가 1이므로 계산할 필요 없이 그대로 리턴해주면 된다.(문제에서는 65536)                  
 
 ## Implementation ##
+[top](#algorithm_practice)
 
 - 백준 17478 재귀함수가 뭔가요? [문제](https://www.acmicpc.net/problem/17478)&nbsp;|&nbsp;[풀이](Algorithm/src/implementation/Solution.java)
   > 재귀함수(자기자신을 호출하는 함수)를 이용하는 문제.               
@@ -170,7 +177,8 @@
   > 회전을 모두 마치면 min값을 리턴하고, 그 값을 answer배열에 담아 리턴하면 된다.                         
   > 해당 사이트의 [행렬 테두리 회전하기](https://programmers.co.kr/learn/courses/30/lessons/77485) 문제와 동일하다.
 
-## DFS / BFS ##
+## DFS BFS ##
+[top](#algorithm_practice)
 
 - Programmers 타겟 넘버 [문제](https://programmers.co.kr/learn/courses/30/lessons/43165)&nbsp;|&nbsp;[풀이](Algorithm/src/dfs_bfs/Solution.java)
   > 인터넷을 참고한 풀이.             
@@ -215,6 +223,7 @@
 
 
 ## ETC ##
+[top](#algorithm_practice)
 
 - Programmers x만큼 간격이 있는 n개의 숫자 [문제](https://programmers.co.kr/learn/courses/30/lessons/12954)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution.java)
   > 주의할 점 : 변수를 선언할 때 long타입으로 맞춰줘야 사이트 테스트를 통과할 수 있다.
@@ -256,6 +265,7 @@
   > (3) 원본 리스트를 순회하며 해당 요소의 키값을 stringbuilder에 담아 출력한다.                      
 
 ## Codeforces ##
+[top](#algorithm_practice)
 
 - Codeforces Round #784 (Div. 4) (3solved, result : 2 out of 8)
   - A [문제](https://codeforces.com/contest/1669/problem/A)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution4.java)               
