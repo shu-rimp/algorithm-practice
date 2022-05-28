@@ -270,6 +270,14 @@
   > bfs탐색이 끝나면 안전영역을 카운트한다.                  
   > 높이 하나에 대한 탐색이 끝나면 안전영역 카운트와 boolean배열을 초기화해준다.                  
   > 안전영역의 최대값을 비교해서 출력한다.                     
+- Programmers 네트워크 [문제](https://programmers.co.kr/learn/courses/30/lessons/43162)&nbsp;|&nbsp;[풀이](Algorithm/src/dfs_bfs/Solution12.java) 
+  > bfs탐색으로 풀었다.                           
+  > 컴퓨터의 갯수 = 노드의 갯수라고 생각한다.                           
+  > 방문여부를 확인하기 위해 노드 갯수 크기의 boolean배열을 생성한다.                     
+  > 노드갯수만큼 반복하며, 아직 방문하지 않은 노드에 대해 bfs탐색을 수행한다.                       
+  > bfs내부에서 노드를 방문하면 연결된 노드들을 탐색한다.                        
+  > 만약 연결된 노드가 있고(1), 방문하지 않았다면(false) 큐에 추가하고 방문처리한다.                            
+  > 탐색이 끝나면 answer를 증가한다.                  
 
 ## ETC ##
 [top](#algorithm_practice)
