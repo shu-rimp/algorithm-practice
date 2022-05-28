@@ -118,6 +118,12 @@
   > 두가지 큐에 모두 원소를 추가했기 때문에 minQ에도 해당 원소를 찾아 제거한다.(remove()메소드 사용)                       
   > D -1도 마찬가지로 minQ에서 poll하고 동일한 값을 maxQ에서도 제거한다.                              
   > 연산을 마친 후 큐가 비어있지 않으면 minQ와 maxQ에서 poll한값을 answer에 저장 후 리턴한다.
+- Programmers 더 맵게 [문제](https://programmers.co.kr/learn/courses/30/lessons/42626)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution18.java)
+  > 오름차순 우선순위큐를 생성하고 스코빌 지수를 큐에 넣는다.                       
+  > 첫번째 원소가 K이상이 될 때까지 새로운 음식 공식을 적용한다.                       
+  > 한번의 연산이 끝날 때마다 answer를 증가한다.                             
+  > 만약 큐에 원소가 한 개 남았는데 K를 넘지 못한다면                             
+  > 모든 음식의 스코빌 지수를 K이상으로 만들 수 없다는 뜻이므로 -1을 리턴한다.                            
                                                                                     
 ## Strings ##
 [top](#algorithm_practice)
