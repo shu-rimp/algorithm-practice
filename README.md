@@ -111,6 +111,13 @@
   > (1) 각 작업이 끝나는 날짜를 미리 계산해서 큐에 저장한다.                                    
   > (2) 첫번째 값을 꺼내 임시변수 tmp에 저장하고, peek한 값이 tmp보다 클 때까지 카운트를 증가시키고, 값을 poll한다.                              
   > (3) 큐가 빌 때까지 1, 2를 반복한다.                
+- Programmers 이중우선순위큐 [문제](https://programmers.co.kr/learn/courses/30/lessons/42628)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution17.java) 
+  > 2개의 우선순위큐를 생성한다. 하나는 오름차순, 하나는 내림차순으로 정렬한다.                         
+  > I로 시작하는 연산이 있으면 두 큐에 모두 추가한다.                          
+  > 최댓값을 제거하는 D1을 만나면 maxQ에서 poll하여 원소를 제거한다.                         
+  > 두가지 큐에 모두 원소를 추가했기 때문에 minQ에도 해당 원소를 찾아 제거한다.(remove()메소드 사용)                       
+  > D -1도 마찬가지로 minQ에서 poll하고 동일한 값을 maxQ에서도 제거한다.                              
+  > 연산을 마친 후 큐가 비어있지 않으면 minQ와 maxQ에서 poll한값을 answer에 저장 후 리턴한다.
                                                                                     
 ## Strings ##
 [top](#algorithm_practice)
