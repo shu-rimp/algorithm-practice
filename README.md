@@ -319,7 +319,11 @@
   > (1) 나중에 원본리스트를 키로 가져와야하기 때문에 리스트를 복사한다.                   
   > (2) 압축좌표값을 저장할 해시맵을 생성한다.                   
   > (2) 복사한 리스트를 오름차순 정렬하고, 해당 키가 이미 맵에 있는지 확인 후 없으면 맵에 저장한다. value는 0부터 증가시킨다.
-  > (3) 원본 리스트를 순회하며 해당 요소의 키값을 stringbuilder에 담아 출력한다.                      
+  > (3) 원본 리스트를 순회하며 해당 요소의 키값을 stringbuilder에 담아 출력한다.         
+- Programmers 쿼드압축 후 개수 세기 [문제](https://programmers.co.kr/learn/courses/30/lessons/68936)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution14.java)  
+  > 쿼드트리 압축방식으로 압축한다.                  
+  > 배열의 모든 원소를 비교하며 동일하면 0, 1에 따라 answer배열에 1씩 증가하고,                          
+  > 다르면 크기를 4분할한 후 다시 체크한다.(재귀호출)            
 
 ## Codeforces ##
 [top](#algorithm_practice)
