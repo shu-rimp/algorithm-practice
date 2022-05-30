@@ -41,6 +41,7 @@ public class Solution13 {
 		
 		iceberg = new int[row][col];
 		
+		// 배열 초기화
 		for(int i=0; i<row; i++) {
 			st = new StringTokenizer(br.readLine());
 			
@@ -53,19 +54,29 @@ public class Solution13 {
 		int area = 0;
 		
 		while(true) {
-			visited = new boolean[row][col];
+			area = 0;	// 해가 넘어가면 area 초기화
+			year++;
+			
+			// 빙산이 모두 녹을 때까지 탈출조건에 부합하지 않으면 0을 출력해야함
+			if(isAllMelted()) {
+				year = 0;
+				
+				break;
+			} // if
+			
+			melt();	// 빙산을 녹인 후에 bfs탐색 시작
+			visited = new boolean[row][col];	// 해가 넘어가면 방문여부 초기화
 			
 			for(int i=0; i<row; i++) {
 				for(int j=0; j<col; j++) {
 					if(iceberg[i][j] != 0 && !visited[i][j]) {
-						melt(i, j);
 						bfs(i, j);
 						
 						area++;
-						year++;
 					} // if
 				} // for
 			} // for
+			
 			
 			if(area >= 2) {
 				break;
@@ -75,10 +86,14 @@ public class Solution13 {
 		System.out.println(year);
 	} // main
 	
-	static void melt(int x, int y) {
+	static void melt() {
 		Queue<Xy> q = new LinkedList<>();
-		visited = new boolean[row][col];
 		
+		// 필드의 visited에 영향을 받지 않는 새로운 boolean배열 생성
+		boolean[][] visited = new boolean[row][col];
+		
+		// 목표좌표가 아닌 그 주변영역을 탐색해서 녹여야하기 때문에
+		// 먼저 0이 아닌 좌표들을 모두 큐에 집어넣고 탐색한다.
 		for(int i=0; i<row; i++) {
 			for(int j=0; j<col; j++) {
 				if(iceberg[i][j] != 0) {
@@ -106,6 +121,7 @@ public class Solution13 {
 				} // if
 			} // for
 			
+			// 녹은 값이 음수가되면 0으로 대입
 			iceberg[p.x][p.y] = (iceberg[p.x][p.y] - melt > 0) ? iceberg[p.x][p.y] - melt : 0;
 		} // while
 	} // melt
@@ -135,5 +151,16 @@ public class Solution13 {
 			} // for
 		} // while
 	} // bfs
-
+	
+	static boolean isAllMelted() {
+		for(int[] i : iceberg) {
+			for(int j : i) {
+				if(j != 0) {
+					return false;
+				} // if
+			} // for
+		} // for
+		
+		return true;
+	} // isAllMelted
 } // end class
