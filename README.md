@@ -135,6 +135,10 @@
   > (3) 답이 빈배열을 반환할 경우 [] 이렇게 빈배열로 출력해야함                        
 - 백준 17219 비밀번호 찾기 [문제](https://www.acmicpc.net/problem/17219)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution22.java) 
   > 해시맵에 공백으로 구분해서 키값을 입력한 후 해당 키에 맞는 값을 반환한다.                           
+- 백준 1927 최소 힙 [문제](https://www.acmicpc.net/problem/1927)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution23.java), 11279 최대 힙 [문제](https://www.acmicpc.net/problem/11279)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution24.java) 
+  > 우선순위큐를 생성하고 하나씩 큐에 집어넣는다.                         
+  > (최소 힙 문제는 오름차순, 최대 힙 문제는 내림차순으로 생성)                         
+  > 큐가 비어있는데 0이 들어올경우 0을 출력하고, 그 외에는 poll()하여 최소/최대값을 출력한다.                       
                                                                                     
 ## Strings ##
 [top](#algorithm_practice)
