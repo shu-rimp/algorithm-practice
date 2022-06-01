@@ -133,6 +133,8 @@
   > (1) 에러 출력시 즉시 해당 테스트 케이스를 종료하고 에러문구는 케이스당 한번만 출력. 라벨링을 이용했다.                        
   > (2) 배열형식으로 출력할 때 마지막 원소는 반점을 붙이지 않고 출력                             
   > (3) 답이 빈배열을 반환할 경우 [] 이렇게 빈배열로 출력해야함                        
+- 백준 17219 비밀번호 찾기 [문제](https://www.acmicpc.net/problem/17219)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution22.java) 
+  > 해시맵에 공백으로 구분해서 키값을 입력한 후 해당 키에 맞는 값을 반환한다.                           
                                                                                     
 ## Strings ##
 [top](#algorithm_practice)
