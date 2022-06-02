@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+// codeforces #784(Div.4) B.Triple
 
 public class Solution5 {
 	
