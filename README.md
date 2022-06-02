@@ -351,6 +351,11 @@
   > 쿼드트리 압축방식으로 압축한다.                  
   > 배열의 모든 원소를 비교하며 동일하면 0, 1에 따라 answer배열에 1씩 증가하고,                          
   > 다르면 크기를 4분할한 후 다시 체크한다.(재귀호출)            
+- 백준 1436 영화감독 숌 [문제](https://www.acmicpc.net/problem/1436)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution15.java) 
+  > 문제유형: 부르트포스                            
+  > 숫자를 계속 증가시키다 666이 포함되어있으면 카운트한다.                               
+  > contains()메소드를 이용하기 위해 문자열로 변환했다.                             
+  > 카운트가 입력받은 n과 같으면 출력하고 반복문을 탈출한다.                         
 
 ## Codeforces ##
 [top](#algorithm_practice)
