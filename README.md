@@ -55,8 +55,8 @@
   > 문자열의 정렬은 사전 순 대로 정렬되는 것을 힌트삼아 일단 배열을 정렬 후, 배열의 끝에서부터 indexOf()메소드로 비교해나갔다.           
   > 첫글자 기준으로 정렬되기 때문에 이중 for문으로 배열을 각각 순회할 필요가 없어진다.   
 - Programmers 베스트앨범 [문제](https://programmers.co.kr/learn/courses/30/lessons/42579)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution4.java)
-  > ~~문제에 나와있는 모든 요구조건을 충족하는데 일부 테스트 케이스가 통과가 안된다. (2022-04-12)~~
-  > 2022-04-13 해결                     
+  > ~~문제에 나와있는 모든 요구조건을 충족하는데 일부 테스트 케이스가 통과가 안된다. (2022.04.12)~~                   
+  > 2022.04.13 해결                     
   > 원인 : line 36 songs의 값을 내림차순으로 정렬할 때, songs.get()메소드의 키값을 genres의 요소로 넣었기 때문              
   > 해결방법 : songs의 keySet만 따로 뽑아내 get메소드의 키로 넣어준 후 정렬.(forEach() 사용)                       
 - 백준11652 카드 [문제](https://www.acmicpc.net/problem/11652)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution5.java)
@@ -362,10 +362,20 @@
 
 - Codeforces Round #784 (Div. 4) (3solved, result : 2 out of 8)
   - A [문제](https://codeforces.com/contest/1669/problem/A)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution4.java)               
-  - B [문제](https://codeforces.com/contest/1669/problem/B)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution5.java) 
-    > 배열을 정렬 후 다른 정수 값이 나올 때마다 카운트 변수를 초기화해주면서, 3 이상이 되면 해당 수를 바로 프린트 해주고 빠져나오게 했다.                  
-    > 3개 이상의 값이 아예 없을 경우 -1을 프린트해주기 위해 boolean변수를 만들어 반복문 이후에도 boolean이 true면 -1을 프린트해준다.                    
-    > contest 당시에는 통과되었으나 끝난 후 테스트케이스가 더 추가되면서 타임아웃으로 인해 오답처리 되었다.                          
+  - B [문제](https://codeforces.com/contest/1669/problem/B)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution5.java)&nbsp;|&nbsp;[재풀이](Algorithm/src/etc/Solution5_2.java)
+    > 배열을 정렬 후 다른 정수 값이 나올 때마다 카운트 변수를 초기화해준다.                   
+    > 3 이상이 되면 해당 수를 바로 프린트 해주고 빠져나오게 했다.                   
+    > 3개 이상의 값이 아예 없을 경우 -1을 프린트해주기 위해 boolean변수를 만들었다.                       
+    > 반복문 이후에도 boolean이 true면 -1을 프린트해준다.                      
+    > ~~contest 당시에는 통과되었으나 끝난 후 테스트케이스가 더 추가되면서 타임아웃으로 인해 오답처리 되었다.(1000ms 초과)~~
+    > 
+    > 재풀이 완료(2022.06.03) (249ms)                                             
+    > 해시맵을 생성한다. 키: 요소 / 값: 카운트                    
+    > 해당하는 키가 맵에 이미 있으면 해당하는 값을 받아온다.                     
+    > 1 증가하고 다시 맵에 추가한다.                       
+    > 맵 초기화가 끝난 후 값이 3이상인 키를 찾아 출력한다.                  
+    > 만약 3이상인 값이 없을 경우를 구분하기 위해 boolean변수를 만들었다.                  
+    > notIn이 true면 -1을 출력한다.                           
   - C [문제](https://codeforces.com/contest/1669/problem/C)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution6.java)
     > 배열의 짝수번째요소, 홀수번째요소들이 각각 모두 홀수거나 짝수일 경우 YES가 된다.                  
     > boolean변수를 4개 만들어 짝수번째 요소의 홀/짝, 홀수번쨰 요소의 홀/짝을 비교해 YES가 되는 모든 경우의 수를 조건식으로 나열하는 코드를 작성했다.             
