@@ -10,7 +10,7 @@
   프로그래머스 : level1 ~ level3<br><hr>
 </div>
 
-[Greedy](#greedy) | [Data Structure](#datastructure) | [Strings](#strings) | [Implementation](#implementation) | [DFS BFS](#dfs-bfs) | [Etc](#etc) | [Codeforces](#codeforces)<hr>
+[Greedy](#greedy) | [Data Structure](#datastructure) | [Strings](#strings) | [Implementation](#implementation) | [DFS BFS](#dfs-bfs) | [Search](#search) | [Codeforces](#codeforces)<hr>
 
 
 ## Greedy ##
@@ -306,7 +306,7 @@
   > 또한 필드의 visited와는 다른 독립적인 boolean배열이 필요하기 때문에 메소드 안에서 새 배열을 생성했다.                            
   > 나는 모두 bfs탐색으로 풀었지만, 녹이는 과정은 bfs, 영역탐색은 dfs로 푸는 방식이 가장 많았다.
 
-## ETC ##
+## Search ##
 [top](#algorithm_practice)
 
 - Programmers x만큼 간격이 있는 n개의 숫자 [문제](https://programmers.co.kr/learn/courses/30/lessons/12954)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution.java)
@@ -369,6 +369,14 @@
   > 이 문제는 값이 있으면 1, 없으면 0을 반환하도록 되어있기 때문에                        
   > 메소드에서 boolean값을 반환하도록 했고,                      
   > 반환값이 true이면 1, false이면 0을 출력했다.                  
+- 백준 10816숫자 카드 2 [문제](https://www.acmicpc.net/problem/10816)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution17.java)   
+  > 문제유형: 이분탐색                        
+  > lowerbound / upperbound의 개념이 필요하다.                                
+  > 이분탐색으로 찾고자하는 원소의 상한선과 하한선 인덱스를 구한다.                                                           
+  > 상한인덱스 - 하한인덱스의 값이 중복원소의 갯수가 된다.                             
+  > 하한인덱스는 해당원소가 시작되는 인덱스이고(포함),                     
+  > 상한인덱스는 해당원소가 아닌 첫 인덱스(포함x)이므로                        
+  > 둘의 조건식을 다르게 지정해야한다.                                 
 
 ## Codeforces ##
 [top](#algorithm_practice)
