@@ -31,6 +31,19 @@
 - 백준 1026 보물 [문제](https://www.acmicpc.net/problem/1026)&nbsp;|&nbsp;[풀이](Algorithm/src/greedy/Solution.java)
   > B의 최대값과 A의 최소값을 곱하도록 만들었다.                                                         
   > A를 오름차순 정렬 후 A를 순회하면서, B에서 최대값(Collections.max() 이용)을 찾아 곱하고 B의 요소를 제거하는 방식으로 접근했다.
+- Programmers 체육복 [문제](https://programmers.co.kr/learn/courses/30/lessons/42862)&nbsp;|&nbsp;[풀이](Algorithm/src/greedy/Solution2.java) 
+  > 총 학생 수에서 lost배열의 길이만큼 뺀 값을 answer로 지정 후 숫자를 늘려나간다.                             
+  > 해시셋을 생성해서 reserve배열 원소들을 추가한다.                                    
+  > 여벌이 있고 동시에 잃어버린 학생을 제외하기 위해 해시셋에 lost원소가 있는지 찾고,                                  
+  > 있다면 셋에서 제거, lost배열 원소를 -1로 대입한다.(if문 영향을 받지 않게하기위함)                                    
+  > 이 때 answer는 처음에 모든 lost학생 수만큼 빼줬기 때문에 1 증가시킨다.                                    
+  > 다시 lost배열을 순회하며, 해당 요소의 앞, 뒤(+-1)값이 셋과 일치하면                                
+  > answer를 1증가, set에서 제거한다.                                                  
+  > 순회가 끝나면 answer를 반환한다.                                  
+  > +) 처음에 해시셋 대신 어레이리스트를 사용했는데, remove메소드를 사용할 때                                 
+  > 해당 값을 찾아서 지우는게 아닌 인덱스값으로 제거해서 런타임에러가 났다.                           
+  > +) 테스트 케이스 중 정렬이 안된채로 입력이 들어오는 경우가 있기 때문에                                  
+  > lost배열을 오름차순 정렬한 후 진행했다.                               
 
 ## DataStructure ##
 [top](#algorithm_practice)
