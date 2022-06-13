@@ -10,7 +10,7 @@
   프로그래머스 : level1 ~ level3<br><hr>
 </div>
 
-[Greedy](#greedy) | [Data Structure](#datastructure) | [Strings](#strings) | [Implementation](#implementation) | [DFS BFS](#dfs-bfs) | [Search](#search) | [Codeforces](#codeforces)<hr>
+[Greedy](#greedy) | [Data Structure](#datastructure) | [Strings](#strings) | [Implementation](#implementation) | [DFS BFS](#dfs-bfs) | [Search](#search) | [DP](#dynamic-programming) | [Codeforces](#codeforces)<hr>
 
 
 ## Greedy ##
