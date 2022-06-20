@@ -174,7 +174,16 @@
 - 백준 1927 최소 힙 [문제](https://www.acmicpc.net/problem/1927)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution23.java), 11279 최대 힙 [문제](https://www.acmicpc.net/problem/11279)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution24.java) 
   > 우선순위큐를 생성하고 하나씩 큐에 집어넣는다.                         
   > (최소 힙 문제는 오름차순, 최대 힙 문제는 내림차순으로 생성)                         
-  > 큐가 비어있는데 0이 들어올경우 0을 출력하고, 그 외에는 poll()하여 최소/최대값을 출력한다.                       
+  > 큐가 비어있는데 0이 들어올경우 0을 출력하고, 그 외에는 poll()하여 최소/최대값을 출력한다.   
+- 백준 1991 트리 순회 [문제](https://www.acmicpc.net/problem/1991)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution25.java)        
+  > 이진 트리를 전위, 중위, 후위 순회한 순서를 각각 출력하는 문제                          
+  > Node클래스에 char타입 root필드를 만들고, Node타입 left, right필드를 만든다.                                 
+  > 입력받은 노드갯수만큼의 크기로 Node타입 배열을 만들고, 알파벳 순서대로 노드객체를 초기화한다.                                   
+  > char타입 노드를 정수변환(-'A')한 값을 노드배열의 인덱스로 탐색하고, 노드에 해당하는 left, right필드를 각각 초기화해준다.                                       
+  > 이 때 입력으로 '.'이 들어올경우 null로 초기화한다.                                         
+  > 전위(root-left-right), 중위(left-root-right), 후위(left-right-root) 순서대로 탐색하는 메소드를 각각 생성한다.                                  
+  > 재귀를 이용하고, 각 탐색순서에 맞게 코드의 순서를 조정한다.                                         
+  > 탐색결과를 stringbuilder에 담아 출력했다.                                   
                                                                                     
 ## Strings ##
 [top](#algorithm_practice)
