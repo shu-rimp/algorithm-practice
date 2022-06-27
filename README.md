@@ -220,7 +220,18 @@
 - Programmers [1차]뉴스 클러스터링 [문제](https://programmers.co.kr/learn/courses/30/lessons/17677)&nbsp;|&nbsp;[풀이](Algorithm/src/strings/Solution7.java) 
   > 문자열을 다중집합으로 만들고, 영어가 아닌 문자가 포함된 원소들을 제거해준 뒤 유사도를 계산하면 된다. ascii코드값을 이용했다.                
   > 교집합, 합집합은 원소의 갯수만 구하면 되어 따로 집합을 만들 필요가 없다.                    
-  > 대소문자만 다르고 같은 문자열이 들어올 경우 유사도가 1이므로 계산할 필요 없이 그대로 리턴해주면 된다.(문제에서는 65536)                  
+  > 대소문자만 다르고 같은 문자열이 들어올 경우 유사도가 1이므로 계산할 필요 없이 그대로 리턴해주면 된다.(문제에서는 65536)          
+- Programmers 문자열 압축 [문제](https://programmers.co.kr/learn/courses/30/lessons/60057)&nbsp;|&nbsp;[풀이](Algorithm/src/strings/Solution8.java)
+  > 자른 문자열을 비교해가는 zipStr메소드를 만들고, 매개변수로 길이(amount)를 지정했다.                                   
+  > 초기값으로 0부터 amount까지 자른 문자열을 저장하고, s의 길이만큼 반복하며 비교한다.                               
+  > 이 때 반복문의 증감식은 amount를 더해준다.                                     
+  > 문자열이 동일하면 zipCount값을 증가하다가 다르면 비교문자열(compare)를 해당 문자열로 대입하고,                                    
+  > zipCount값과 기존 자른문자열을 StringBuilder에 저장한다.                              
+  > s의 길이가 amount로 나누어 떨어지지 않으면 반복문의 증감식(i + amount)에서 인덱스에러가 난다.                                
+  > i + amount값이 s길이를 초과하면 반복문을 탈출하는 조건을 걸어주고,                             
+  > 남은 문자열은 저장해뒀다가 가장 마지막에 추가해준다.                             
+  > 테스트 케이스 중, 길이가 1인 문자열이 들어오는 경우가 있다.                              
+  > 이를 대비해 문자열의 길이가 1이면 바로 1을 리턴하는 조건을 걸어주었다.
 
 ## Implementation ##
 [top](#algorithm_practice)
