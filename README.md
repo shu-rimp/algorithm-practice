@@ -260,6 +260,11 @@
   > 쿼리 하나당 총 4번의 이동이 일어나고, 그때마다 최소값을 비교해 min에 저장한다.                       
   > 회전을 모두 마치면 min값을 리턴하고, 그 값을 answer배열에 담아 리턴하면 된다.                         
   > 해당 사이트의 [행렬 테두리 회전하기](https://programmers.co.kr/learn/courses/30/lessons/77485) 문제와 동일하다.
+- 백준 17427 약수의 합 2 [문제](https://www.acmicpc.net/problem/17427)&nbsp;|&nbsp;[풀이](Algorithm/src/etc/Solution18.java) 
+  > 일반적인 약수의 합을 구하는 방식으로 접근하면 시간초과가 난다.                  
+  > 1부터 n까지의 약수를 모두 나열하면, 1이나오는 갯수는 n, 2가 나오는 갯수는 (n / 2) * 2, 3이 나오는 갯수는 (n / 3) * 3,                  
+  > 이렇게 n까지 증가하는 규칙을 확인할 수 있다.                              
+  > 그대로 공식화해서 모두 더한 값을 출력한다.                 
 
 ## DFS BFS ##
 [top](#algorithm_practice)
