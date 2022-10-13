@@ -292,7 +292,18 @@
   > 개미 두개씩 뽑아 비교한다. 만약 이전개미의 그룹과 다음개미의 그룹이 다르면 순서를 바꿔준다.                               
   > 1초에 한번씩만 개미를 뛰어넘으므로, for문의 i를 1 증가해 건너뛰어준다.                             
   > 또한 개미는 전진만 하므로, 그룹 하나를 기준으로 잡는 조건을 추가해야한다.                            
-  > 이 조건을 추가하지 않을 시 그룹이 다를 때마다 변경이 일어나 개미가 뒤로 갈 수 있다.                                 
+  > 이 조건을 추가하지 않을 시 그룹이 다를 때마다 변경이 일어나 개미가 뒤로 갈 수 있다.       
+- Programmers [3차] 파일명 정렬 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/17686)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution26.java)
+  > Comparable 인터페이스를 구현해야하는 정렬문제                         
+  > head, number, tails를 저장하는 Files 클래스를 만들고 compareTo 메소드를 오버라이딩하여 조건에 맞게 정렬한다.          
+  > 이 때 head는 대소문자를 구분하지 않으므로 모두 소문자(or 대문자)처리 후 비교한다.                
+  > 후에 원본String값을 그대로 반환해야하기 때문에 number의 경우 numberInt필드에 정수변환한 number를 저장하고,                      
+  > 원본 number대신 numberInt를 사용하여 정렬한다.                         
+  > 문자열을 받아서 정규표현식을 이용해 split후 head, number값을 얻는다.                        
+  > tail은 head와 number 뒤 나머지 모든 문자열이므로 둘의 length를 더한 값을 substring의 beginning값으로 지정한다.                          
+  > Files객체를 생성한후 Files타입 배열에 순서대로 저장한다.                        
+  > Arrays.sort로 재정렬한 메소드를 사용해 정렬 후 원상복구한 문자열을 반환하기 위해                         
+  > 배열을 순회하며 필드값들을 연결시킨 후 answer배열에 추가한다.                           
 
 ## DFS BFS ##
 [top](#algorithm_practice)
