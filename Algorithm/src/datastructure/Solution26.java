@@ -2,8 +2,6 @@ package datastructure;
 
 import java.util.Arrays;
 
-import lombok.ToString;
-
 // Programmers [3차] 파일명 정렬
 class Solution26 {
 	
@@ -27,8 +25,7 @@ class Solution26 {
         String[] answer = new String[files.length];
         
         for(int i=0; i<answer.length; i++) {
-        	String str = fileList[i].head + fileList[i].number + fileList[i].tail;
-        	answer[i] = str;
+        	answer[i] = fileList[i].toString();
         } // for
         
 //        System.out.println(Arrays.toString(answer));
@@ -44,7 +41,6 @@ class Solution26 {
 
 } // end class
 
-@ToString	// 테스트용
 class Files implements Comparable<Files> {
 	String head;
 	String number;
@@ -59,6 +55,11 @@ class Files implements Comparable<Files> {
 		this.numberInt = Integer.parseInt(number.replaceAll(" ", ""));
 		this.tail = tail;
 	} // constructor
+	
+	@Override
+	public String toString() {
+		return head + number + tail;
+	} // toString
 	
 	@Override
 	public int compareTo(Files o) {
