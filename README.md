@@ -305,6 +305,13 @@
   > Arrays.sort로 재정렬한 메소드를 사용해 정렬 후 원상복구한 문자열을 반환하기 위해                         
   > 배열을 순회하며 필드값들을 연결시킨 후 answer배열에 추가한다.                           
   > +) toString 메소드를 오버라이딩하면 메소드 호출로 간단하게 필드들을 연결할 수 있다.
+- Programmers 개인정보 수집 유효기간 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/150370)&nbsp;|&nbsp;[풀이](Algorithm/src/implementation/Solution9.java)
+  > <b>"한 달은 모두 28일로 가정한다"</b> 가 중요한 문제            
+  > date객체로 날짜 계산을 했다가 저 조건을 뒤늦게 보고 시간을 날려버렸다.                   
+  > 단순하게 주어진 날짜를 28을 곱하여 일 수로 환산한 후,           
+  > 타겟 날짜와 비교하여 만료된 유저번호만 리턴한다.                       
+  > 굳이 클래스 생성 -> 저장 -> 비교의 과정을 거치지 않고                   
+  > 바로 배열순회하며 비교하는게 더 깔끔했을 듯 하다.
 
 ## DFS BFS ##
 [top](#algorithm_practice)
