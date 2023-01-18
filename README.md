@@ -195,7 +195,15 @@
   > 오른쪽에 있으면 3번 연산을 수가 맨 앞에 위치할 때까지 반복한다.                                                 
   > 찾는 수를 큐에 저장해서 큐가 빌 때까지 반복했다.                                  
   > 한번 수를 찾고나면 덱의 사이즈와 타겟 인덱스, 중간인덱스값이 모두 바뀌므로 새롭게 저장한 후 카운트를 센다.                                      
-                                                                                    
+- Programmers 햄버거 만들기 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/133502)&nbsp;|&nbsp;[풀이](Algorithm/src/datastructure/Solution27.kt)
+  > 배열을 문자열로 변환 후 햄버거를 만들 수 있을 때까지 비교하며 반복한다.                   
+  > 완성된 햄버거는 문자열에서 제거한다.             
+  > 문자열로 풀 경우 시간초과에 매우 유의해야한다.                 
+  > 문자열을 스트링빌더로 생성하고,                 
+  > 제거한 문자열을 재할당하는 대신 빌더 자체에서 delete했다.            
+  > 또한 replace, remove, indexOf 대신 substring을 이용했다.                      
+  > 동일한 결과여도 로직에 따라 시간차이가 많이 났다.                                     
+
 ## Strings ##
 [top](#algorithm_practice)
 
