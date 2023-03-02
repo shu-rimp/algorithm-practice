@@ -421,7 +421,10 @@
   > melt메소드에서는 0이 아닌 모든 좌표를 큐에 먼저 집어넣고 탐색했다.                             
   > 또한 필드의 visited와는 다른 독립적인 boolean배열이 필요하기 때문에 메소드 안에서 새 배열을 생성했다.                            
   > 나는 모두 bfs탐색으로 풀었지만, 녹이는 과정은 bfs, 영역탐색은 dfs로 푸는 방식이 가장 많았다.
-
+- Programmers 게임 맵 최단거리 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/1844?language=java)&nbsp;|&nbsp;[풀이](Algorithm/src/dfs_bfs/Solution13.java)
+  > 0, 1로 이루어진 nxm 배열에서의 미로 최단거리를 구하는 문제               
+  > 전형적인 bfs 알고리즘을 사용하는 문제이다.                
+  > 단 최단 경로를 찾지 못할 시 -1을 리턴하라는 조건이 있었다.
 ## Search ##
 [top](#algorithm_practice)
 
